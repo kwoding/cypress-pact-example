@@ -1,7 +1,7 @@
 {
   "name": "cypress-pact-example",
   "version": "1.0.0",
-  "description": "Example demostrating consumer contract generation with cypress mocks",
+  "description": "Example demonstrating consumer contract generation with cypress mocks",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
