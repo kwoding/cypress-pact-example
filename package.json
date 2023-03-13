@@ -1,0 +1,19 @@
+{
+  "name": "cypress-pact-example",
+  "version": "1.0.0",
+  "description": "Example demostrating consumer contract generation with cypress mocks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kwo Ding",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@pact-foundation/pact-core": "^13.10.0",
+    "@pactflow/pact-cypress-adapter": "^1.3.0",
+    "@pactflow/swagger-mock-validator": "^11.3.0",
+    "cypress": "^10.10.0",
+    "typescript": "^4.8.4"
+  }
+}
