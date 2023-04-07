@@ -1,17 +1,17 @@
 # Example Pact commands
 
 ## Publish provider
-echo "TEST OK" > provider-test-results.md && \
+echo "{\"result\": \"PASSED\"}" > provider-test-results.json && \
 npx pactflow publish-provider-contract cypress/pacts/contact-service-provider.json \
   --provider=contact-service \
   --provider-app-version=1.0.0 \
   --branch=main \
   --content-type=application.json \
   --verification-exit-code=0 \
-  --verification-results=provider-test-results.md \
+  --verification-results=provider-test-results.json \
   --verification-results-content-type=application/json \
   --verifier=rest-assured \
-  && rm provider-test-results.md
+  && rm provider-test-results.json
 
 ## Publish consumer contracts
 npx pact-broker publish cypress/pacts/contact-service-contact-frontend.json --branch main --consumer-app-version 1.0.0

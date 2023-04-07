@@ -37,8 +37,8 @@ export const deleteContact = () => {
 export const saveContact = (contact: Contact) => {
     cy.get(SAVE_CONTACT_LOCATORS.lastName).clear().type(contact.lastName)
         .get(SAVE_CONTACT_LOCATORS.firstName).clear().type(contact.firstName)
-        .get(SAVE_CONTACT_LOCATORS.phone).clear().type(contact.phone);
-    // .get(SAVE_CONTACT_LOCATORS.email).clear().type(contact.email);
+        .get(SAVE_CONTACT_LOCATORS.phone).clear().type(contact.phone)
+        .get(SAVE_CONTACT_LOCATORS.email).clear().type(contact.email);
 
     if (contact.addressLine1) {
         cy.get(SAVE_CONTACT_LOCATORS.addressLine1).clear().type(contact.addressLine1);
